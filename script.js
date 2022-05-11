@@ -35,7 +35,7 @@ async function changeAndShowData() {
 
     for (let i = 0; i < usersArrOfObj.length; i++) {
 
-        let { username, ...newObj } = usersArrOfObj[i]; // delete username property (unmutable) from main object
+        let { username, ...newObj } = usersArrOfObj[i]; // delete username property (immutable) from main object
         let usersKeysArray = Object.entries(newObj);
         let addressesArray = Object.entries(newObj.address);
         let finalPosts = [];
